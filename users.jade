@@ -1,0 +1,13 @@
+extends layout
+
+block content
+
+  div
+  table
+    thead
+      tr: th User
+    tbody
+      each user, i in title
+        tr
+          td 
+            a(href='/users/' + user._id) #{user.name}
